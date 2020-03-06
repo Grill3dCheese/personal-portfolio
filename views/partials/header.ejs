@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Keith McKenna || Welcome</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheets/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:900|Montserrat&display=swap">
+		<script src="https://kit.fontawesome.com/ba832eb4c4.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="page-top">
+		
+        <nav id="mainNav" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+    <div class="container">
+		<a class="navbar-brand js-scroll-trigger" href="#page-top">&lt; k|m /&gt;</a>
+            <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navLinks" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+				<div class="wrapper-menu">
+  				<div class="line-menu half start"></div>
+  				<div class="line-menu"></div>
+  				<div class="line-menu half end"></div>
+				</div>
+            </button>
+        <div id="navLinks" class="collapse navbar-collapse">
+          <ul class="nav ml-auto">
+			  <li class="nav-item js-scroll-trigger">
+			  	<a href="#about" class="nav-link js-scroll-trigger">About</a>
+			  </li>
+			  <li class="nav-item js-scroll-trigger">
+			  	<a href="#projects" class="nav-link js-scroll-trigger">Projects</a>
+			  </li>
+			  <li class="nav-item js-scroll-trigger">
+			  	<a href="#contact" class="nav-link js-scroll-trigger">Contact</a>
+			  </li>
+          </ul>
+          <ul class="nav ml-auto">
+            <li class="nav-item js-scroll-trigger">
+				<a class="nav-link boxy js-scroll-trigger" href="/campgrounds">Blog</a>
+			  </li>
+          </ul>
+        </div>
+    </div>
+</nav>
+		
+        <div class="container">
+			<div class="row justify-content-center">
+            <% if(error && error.length > 0){ %>
+                <div class="alert alert-danger text-center alert-dismissible fade show navIndex" role="alert">
+                    <%= error %>
+  					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    					<span aria-hidden="true">&times;</span>
+  					</button>
+                </div>
+            <% } %>
+            <% if(success && success.length > 0){ %>
+                <div class="alert alert-success text-center alert-dismissible fade show navIndex" role="alert">
+                    <%= success %>
+  					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    					<span aria-hidden="true">&times;</span>
+  					</button>
+                </div>
+            <% } %>
+			</div>
+        </div>

@@ -1,13 +1,13 @@
-<%- include('partials/header'); -%>
+<%- include('partials/portHeader'); -%>
 
-	<header class="masthead" style="background-image:url('assets/img/introBG.jpg');">
+	<header class="masthead">
 		<div class="intro-body">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 mx-auto">
-						<p class="intro-text">Let's do something</p>
-						<h1 class="brand-heading">Creative.</h1>
-						<a href="#resume" class="intro-btn js-scroll-trigger" role="button">Resume</a>
+						<p class="intro-text">Let's create something</p>
+						<h1 class="brand-heading"></h1>
+						<a href="#projects" class="intro-btn js-scroll-trigger" role="button">Projects</a>
 					</div>
 				</div>
 			</div>
@@ -17,15 +17,21 @@
 	<section id="about" class="about-page text-center">
 		<div class="container-fluid">
 			<div class="row align-items-center">
-				<div class="col-12 col-lg-8">
+				<div class="col-12 col-lg-7" data-wow-duration="1.2s">
 				<img src="assets/img/codeBlock.png" class="rounded imgShadow mb-5 mb-lg-0" alt="An example block of HTML code">
 				</div>
-				<div class="col-12 col-lg-4">
+				<div class="col-12 col-lg-5" data-wow-duration="1.2s">
 					<h1>About Me</h1>
-					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati necessitatibus quod similique, ipsam excepturi atque nihil at repudiandae nam suscipit repellendus nemo maxime! Quod aut, quam laborum excepturi, nam asperiores?</div>
-					<div>Consectetur qui ab nobis iusto. Perspiciatis modi nihil expedita dignissimos optio, delectus in saepe est aliquam officia, quod quas. Corporis, quae ut aut ratione. Nam odit expedita autem non, ipsam?</div>
-					<div>Totam itaque placeat autem, labore, quasi sequi fuga aliquam laudantium magni id ad voluptatem incidunt porro mollitia maiores et assumenda quo aperiam veritatis eligendi cum non. Suscipit, sed! Voluptates, minus.</div>
-					<div>Molestiae libero nam autem voluptatibus eos, adipisci impedit repellat officia. Est accusantium laudantium quo saepe possimus expedita, laboriosam iste cum quisquam eaque, quibusdam odit in pariatur velit consequuntur nihil? Ea.</div>
+					<div>Hi, I'm Keith! <br> Full-stack web developer and software engineer working out of Sioux Falls, SD.</div>
+					<div>Since my very first, "Hello World!" I've been fascinated with code. I am a self-taught developer learning new languages through bootcamps and online resources.</div>
+					<div>In my free time, I can often be found behind a keyboard - coding! I also enjoy time outdoors: hiking, biking, swimming and time with family and friends are a few choice activities.</div>
+					<div>Below you'll find a selection of some of my most recent projects that showcase the technologies I work closely with. I look forward to connecting with you and working on your next project!</div>
+						<a href="https://github.com/Grill3dCheese" target="_blank" class="wow slideInLeft btn-floating gold accent mt-5">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="#" target="_blank" class="wow slideInRight btn-floating gold accent mt-5">
+							<i class="fab fa-linkedin"></i>
+						</a>
 				</div>
 			</div>
 		</div>
@@ -34,13 +40,13 @@
 	<section id="info" class="info-bar text-center">
 		<div class="container-fluid">
 			<div class="row align-items-center">
-				<div class="col-md-4 mb-4 mb-md-0">
+				<div class="wow fadeIn col-md-4 mb-4 mb-md-0" data-wow-delay="0.3s">
 					<i class="far fa-calendar-alt fa-2x pb-4 golden"></i>
 					<h3>Current Availability</h3>
 					<hr>
 					<a class="btn contact-btn js-scroll-trigger" href="#contact" role="button">I'm open, let's collaborate!</a>
 				</div>
-				<div class="col-md-4 mb-4 mb-md-0">
+				<div class="wow fadeIn col-md-4 mb-4 mb-md-0" data-wow-delay="0.4s">
 					<i class="fas fa-question fa-2x pb-4 golden"></i>
 					<h3>How Can I Help</h3>
 					<hr>
@@ -48,7 +54,7 @@
 						From personal portfolio pages to sites for your business, special occasion and everything in between. I'm here to help with any project, any size! Feel free to say "Hi!" and see what I can do for you.
 					</p>
 				</div>
-				<div class="col-md-4">
+				<div class="wow fadeIn col-md-4" data-wow-delay="0.5s">
 					<i class="fas fa-code fa-2x pb-4 golden"></i>
 					<h3>A few tools I use</h3>
 					<hr>
@@ -74,53 +80,59 @@
 						My Projects
 					</h2>
 					<p>
-						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolore porro enim eveniet eum amet optio dicta laboriosam quo. Eaque error dolor odio illum expedita iusto quod neque, id autem.</span><span>Facilis, necessitatibus numquam ipsa laudantium explicabo quos soluta, consequatur nemo nihil voluptate maxime odio rerum tempora natus quaerat. Facilis consequatur maxime harum iusto, repudiandae velit fuga vel ad maiores vero.</span>
+						<span>Below you'll find a collection of recent projects I've worked on.</span>
 					</p>
 				</div>
 			</div>
 			<div class="row pt-5">
-				<div class="col-md-4 align-self-start">
+				<div class="col-lg-4 align-self-start">
 					<div class="card card-overlay slender">
 						<div class="view view-overlay overlay">
-							<img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2702&q=80" alt="" class="card-img-top">
+							<img src="assets/img/yelpcampDemo.png" alt="YelpCamp Project Animated Image" class="card-img-top">
 						</div>
 						<div class="card-body card-body-overlay text-center">
 							<h4 class="card-title">
-								<strong>Candy Museum</strong>
+								<strong>YelpCamp</strong>
 							</h4>
 							<h5 class="pb-2">
-								Candy Museum Project!
+								<strong>Developed Using:</strong> <br> HTML5, CSS3, Bootstrap 4, NodeJS/JS, MongoDB & templated using Express
 							</h5>
+							<a href="https://github.com/Grill3dCheese/yelp-camp" class="btn project-btn" target="_blank" role="button">Source Code</a>
+							<a href="https://nameless-eyrie-68240.herokuapp.com/" class="btn project-btn" target="_blank" role="button">Live Demo</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 align-self-end mt-4 mt-md-5">
+				<div class="col-lg-4 align-self-end mt-4 mt-lg-0">
 					<div class="card card-overlay slender">
 						<div class="view view-overlay overlay">
-							<img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2702&q=80" alt="" class="card-img-top">
+							<img src="assets/img/gameDemo.png" alt="YelpCamp Project Animated Image" class="card-img-top">
 						</div>
 						<div class="card-body card-body-overlay text-center">
 							<h4 class="card-title">
-								<strong>Candy Museum</strong>
+								<strong>RGB Color Game</strong>
 							</h4>
 							<h5 class="pb-2">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								<strong>Developed Using:</strong> <br> HTML5, CSS3 & Vanilla Javascript
 							</h5>
+							<a href="https://github.com/Grill3dCheese/color-game" class="btn project-btn" target="_blank" role="button">Source Code</a>
+							<a href="https://keithmckenna.com/colorgame/" class="btn project-btn" target="_blank" role="button">Live Demo</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 align-self-start mt-4 mt-md-0">
+				<div class="col-lg-4 align-self-start mt-4 mt-lg-0">
 					<div class="card card-overlay slender">
 						<div class="view view-overlay overlay">
-							<img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2702&q=80" alt="" class="card-img-top">
+							<img src="assets/img/blogDemo.png" alt="YelpCamp Project Animated Image" class="card-img-top">
 						</div>
 						<div class="card-body card-body-overlay text-center">
 							<h4 class="card-title">
-								<strong>Candy Museum</strong>
+								<strong>Blog Web App</strong>
 							</h4>
 							<h5 class="pb-2">
-								New separate candy project!
+								<strong>Developed Using:</strong> <br> HTML5, CSS3, Bootstrap 4, NodeJS/JS, MongoDB & templated using Express
 							</h5>
+							<a href="https://github.com/Grill3dCheese/blog-app" class="btn project-btn" target="_blank" role="button">Source Code</a>
+							<a href="https://fathomless-harbor-37996.herokuapp.com/posts" class="btn project-btn" target="_blank" role="button">Live Demo</a>
 						</div>
 					</div>
 				</div>
@@ -133,13 +145,13 @@
 		<!-- Section heading -->
 		<h2 class="font-weight-bold text-center mb-5">Contact Me</h2>
 		<!-- Section description -->
-		<p class="text-center mx-auto pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+		<p class="text-center mx-auto pb-5">Feel free to use the contact form below to reach out to me. <br> If forms aren't your thing, no problem, reach out to me at <a href="mailto:hello@keithmckenna.com?&subject=Howdy!&body=Hey Keith! How's it going?">hello@keithmckenna.com</a></p>
 
 		<!-- Grid row -->
 		<div class="row justify-content-center">
 
 			<!-- Grid column -->
-			<div class="col-lg-4 mb-lg-0 mb-4">
+			<div class="wow slideInLeft col-lg-4 mb-lg-0 mb-4">
 
 				<!-- Form with header -->
 				<div class="card">
@@ -149,7 +161,7 @@
 							<h4 class="mt-2">
 								<i class="fas fa-envelope"></i> Write to me:</h4>
 						</div>
-						<p class="dark-grey-text">We'll write rarely, but only the best content.</p>
+						<p class="dark-grey-text">I typically reply to every message within 24 hours.</p>
 						<!-- Body -->
 						<form action="/contact" id="contact-form" method="post" role="form">
 							<fieldset>
@@ -163,14 +175,14 @@
 								</div>
 								<div class="contact-form">
 									<i class="fas fa-tag prefix grey-text"></i>
-									<input type="text" name="subject" id="subject" class="form-control" placeholder="Subject (Ex. Feedback, Report A Bug, Let's create something!, etc.)">
+									<input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
 								</div>
 								<div class="contact-form">
 									<i class="fas fa-pencil-alt prefix grey-text"></i>
 									<textarea name="message" id="message" class="form-control contact-textarea" rows="3" placeholder="Send Message" required></textarea>
 								</div>
 								<div class="text-center">
-									<button class="btn contact-btn dark">Submit</button>
+									<button class="btn contact-btn submit-btn dark">Submit</button>
 								</div>
 							</fieldset>
 						</form>
@@ -182,7 +194,7 @@
 			<!-- Grid column -->
 
 			<!-- Grid column -->
-			<div class="col-lg-5">
+			<div class="wow slideInRight col-lg-5">
 
 				<!--Google map-->
 				<div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
@@ -192,24 +204,24 @@
 				<div class="row text-center">
 					<div class="col-md-4">
 						<div class="btn-floating gold accent">
-							<i class="fas fa-map-marker-alt"></i>
+							<i class="wow fadeInDown fas fa-map-marker-alt"></i>
 						</div>
 						<p>Located:</p>
-						<p class="mb-md-0">Sioux Falls, 57106</p>
+						<p class="mb-md-0">Sioux Falls, SD</p>
 					</div>
 					<div class="col-md-4">
 						<a href="sms:+16057772434&body=Hi Keith! I'm currently on your website and I'd like to connect with you." class="btn-floating gold accent">
-							<i class="fas fa-phone"></i>
+							<i class="wow tada fas fa-phone"></i>
 						</a>
 						<p>Send me a text:</p>
 						<p class="mb-md-0">Tap the phone icon above</p>
 					</div>
 					<div class="col-md-4">
 						<div class="btn-floating gold accent">
-							<i class="fas fa-clock"></i>
+							<i class="wow swing fas fa-clock"></i>
 						</div>
-						<p>Typically respond between:</p>
-						<p class="mb-0">Mon - Fri: 8:00AM - 6:00PM CST</p>
+						<p>Replies to inquiries between:</p>
+						<p class="mb-0">Sun - Sat: 8:00AM - 9:00PM CST</p>
 					</div>
 				</div>
 
@@ -241,4 +253,4 @@
 		</div>
 	</footer>
 
-<%- include('partials/footer'); -%>
+<%- include('partials/portFooter'); -%>

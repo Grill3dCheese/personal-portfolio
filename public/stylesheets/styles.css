@@ -41,16 +41,8 @@ h3 {
 	text-transform: uppercase
 }
 
-h4 {
-	font-size: 1.5rem;
-	line-height: 1.2;
-	margin-top: 0;
-}
-
 h5 {
-	font-size: 1.25rem;
-	margin-bottom: 0.5rem;
-	line-height: 1.2;
+	font-size: 1rem;
 	margin-top: 0;
 }
 
@@ -63,6 +55,10 @@ a:hover {
 	text-decoration: none
 }
 
+.btn.focus, .btn:focus {
+	box-shadow: none;
+}
+
 .imgShadow {
 	-webkit-box-shadow:0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) !important;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) !important
@@ -72,12 +68,12 @@ a:hover {
 	color: #e1a87a
 }
 
-.fab {
+p > .fab {
 	transition: all .3s ease-out
 }
 
-.fab:focus,
-.fab:hover {
+p > .fab:focus,
+p > .fab:hover {
 	color: #e1a87a;
 	transition: all .3s ease-in-out
 }
@@ -98,7 +94,6 @@ hr {
 }
 
 #mainNav {
-	font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 1rem;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     transition: all 1.2s;
@@ -107,7 +102,7 @@ hr {
 }
 
 .scrollUp {
-    transform: translateY(-92px);
+    transform: translateY(-91px);
 }
 
 #mainNav .nav-link {
@@ -190,6 +185,7 @@ hr {
     padding: 200px 0;
     text-align: center;
     color: #fff;
+	background: url(../assets/img/introBG.jpg);
     background-color: #000;
     background-size: cover;
 	background-position: center
@@ -201,13 +197,14 @@ hr {
 }
 
 .masthead .intro-body .brand-heading {
-    font-size: 3.5em
+    font-size: 2.5em;
+	margin-bottom: 45px
 }
 
 .masthead .intro-body .intro-text {
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 0.55em;
+    letter-spacing: 0.5em;
 }
 
  /*Small devices (landscape phones, 576px and up)*/
@@ -261,17 +258,17 @@ hr {
 	text-transform: uppercase;
 	width: 120px;
 	padding: 21px 34px;
-	transition: background .3s ease-in-out;
 	color: #fff;
-	border: 2px solid #fff;
-	background: transparent
+	border: 1px solid #e1a87a;
+	border-radius: .25em;
+	background: transparent;
+	transition: background .3s ease-in-out;
 }
 
-.intro-btn:focus,
 .intro-btn:hover {
 	color: #fff;
 	outline: none;
-	background: hsla(0, 0%, 100%, .1)
+	background: hsla(27, 63%, 68%, .1)
 }
 
 .about-page {
@@ -292,7 +289,6 @@ hr {
 	color: #fff;
 	border: 1px solid #e1a87a;
 	padding: 21px 34px;
-	font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-weight: 900;
 	font-size: 11px;
 	letter-spacing: .16em;
@@ -300,7 +296,6 @@ hr {
 	transition: all .3s ease-in-out
 }
 
-.contact-btn:focus,
 .contact-btn:hover {
 	background-color: #e1a87a;
 	color: #151515;
@@ -353,14 +348,6 @@ hr {
     display: block;
 }
 
-.card-img-top {
-	border-top-left-radius: calc(0.25rem - 1px);
-    border-top-right-radius: calc(0.25rem - 1px);
-	-ms-flex-negative: 0;
-    flex-shrink: 0;
-    width: 100%;
-}
-
 .card-body {
 	padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -375,6 +362,21 @@ hr {
 .image-box {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), var(--image-url) center center;
   background-size: cover;
+}
+
+.project-btn {
+	padding: 15px 25px;
+	border: 1px solid #e1a87a;
+	font-weight: 900;
+	font-size: 11px;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+}
+
+.project-btn:hover {
+	background-color: #e1a87a;
+	color: #151515;
+	transition: all .3s ease-in-out
 }
 
 @media (min-width: 1024px) {
@@ -424,6 +426,12 @@ hr {
 	padding: 100px 0 100px 0;
 }
 
+.submit-btn:focus {
+	background-color: #e1a87a;
+	color: #151515;
+	transition: all .3s ease-in-out
+}
+
 .form-header {
 	padding: 1rem;
     margin-top: -3.13rem;
@@ -470,13 +478,13 @@ hr {
 }
 
 .contact-form input:not([type]):focus:not([readonly]),.contact-form input[type="text"]:not(.browser-default):focus:not([readonly]),.contact-form input[type="email"]:not(.browser-default):focus:not([readonly]),.contact-form textarea.contact-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #4285f4;
-    -webkit-box-shadow: 0 1px 0 0 #4285f4;
-    box-shadow: 0 1px 0 0 #4285f4
+    border-bottom: 1px solid #e1a87a;
+    -webkit-box-shadow: 0 1px 0 0 #e1a87a;
+    box-shadow: 0 1px 0 0 #e1a87a
 }
 
 .contact-form input:not([type]):focus:not([readonly])+label,.contact-form input[type="text"]:not(.browser-default):focus:not([readonly])+label,.contact-form input[type="email"]:not(.browser-default):focus:not([readonly])+label,.contact-form textarea.contact-textarea:focus:not([readonly])+label {
-    color: #4285f4
+    color: #e1a87a
 }
 
 .contact-form input:not([type])+label::after,.contact-form input[type="text"]:not(.browser-default)+label::after,.contact-form input[type="email"]:not(.browser-default)+label::after,.contact-form textarea.contact-textarea+label::after {
@@ -720,4 +728,8 @@ hr {
 
 .backButton {
     margin: 20px;
+}
+
+.footer-copyright a {
+	color: #edf2f7;
 }

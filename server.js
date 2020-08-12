@@ -7,7 +7,7 @@ var express         = require("express"),
 
 //require route
 var contactRoutes	= require("./routes/contact"),
-	indexRoutes		= require("./routes/index")
+	indexRoutes		= require("./routes/portIndex")
 	
 
 app.set("view engine", "ejs");

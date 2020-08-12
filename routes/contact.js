@@ -7,14 +7,14 @@ router.post('/contact', (req, res) => {
 
   // Instantiate the SMTP server
   const smtpTrans = nodemailer.createTransport({
-    host: "smtp.stackmail.com",
+    host: "keithmckenna.com",
 	port: 465,
 	secure: true,
     auth: {
     	user: "hello@keithmckenna.com",
         pass: process.env.MAILEPW
     }
-  })
+  });
 
   // Specify what the email will look like
   const mailOpts = {
@@ -25,7 +25,7 @@ router.post('/contact', (req, res) => {
     text: `From: ${req.body.name} (${req.body.email}) -
 			Subject: (${req.body.subject})
 			${req.body.name} says: ${req.body.message}`
-  }
+  };
 
   // Attempt to send the email
   smtpTrans.sendMail(mailOpts, (error, response) => {
@@ -37,7 +37,7 @@ router.post('/contact', (req, res) => {
         req.flash("success", "Contact form submitted successfully. Thanks for reaching out! I'll be in touch shortly.");
         res.redirect("back");
     }
-  })
-})
+  });
+});
 
 module.exports = router;

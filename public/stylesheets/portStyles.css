@@ -487,53 +487,19 @@ hr {
     color: #e1a87a
 }
 
-.contact-form input:not([type])+label::after,.contact-form input[type="text"]:not(.browser-default)+label::after,.contact-form input[type="email"]:not(.browser-default)+label::after,.contact-form textarea.contact-textarea+label::after {
-    position: absolute;
-    top: 65px;
-    display: block;
-    content: "";
-    opacity: 0;
-    -webkit-transition: .2s opacity ease-out,0.2s color ease-out;
-    transition: .2s opacity ease-out,0.2s color ease-out
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding-top: 7px;
+  transition: all 200ms;
+  opacity: 0.5;
 }
 
-.contact-form input:not([type]).form-control.valid+label:after,.contact-form input:not([type]).form-control:focus.valid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control.valid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control:focus.valid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control.valid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control:focus.valid+label:after,.contact-form textarea.contact-textarea.form-control.valid+label:after,.contact-form textarea.contact-textarea.form-control:focus.valid+label:after {
-    top: 4.1rem
-}
-
-.contact-form input:not([type]).form-control.invalid+label:after,.contact-form input:not([type]).form-control:focus.invalid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control.invalid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control:focus.invalid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control.invalid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control:focus.invalid+label:after,.contact-form textarea.contact-textarea.form-control.invalid+label:after,.contact-form textarea.contact-textarea.form-control:focus.invalid+label:after {
-    top: 4rem
-}
-
-.contact-form input:not([type]).form-control-lg.valid+label:after,.contact-form input:not([type]).form-control-lg:focus.valid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control-lg.valid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control-lg:focus.valid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control-lg.valid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control-lg:focus.valid+label:after,.contact-form textarea.contact-textarea.form-control-lg.valid+label:after,.contact-form textarea.contact-textarea.form-control-lg:focus.valid+label:after {
-    top: 4.6rem
-}
-
-.contact-form input:not([type]).form-control-lg.invalid+label:after,.contact-form input:not([type]).form-control-lg:focus.invalid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control-lg.invalid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control-lg:focus.invalid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control-lg.invalid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control-lg:focus.invalid+label:after,.contact-form textarea.contact-textarea.form-control-lg.invalid+label:after,.contact-form textarea.contact-textarea.form-control-lg:focus.invalid+label:after {
-    top: 4.6rem
-}
-
-.contact-form input:not([type]).form-control-sm.valid+label:after,.contact-form input:not([type]).form-control-sm:focus.valid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control-sm.valid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control-sm:focus.valid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control-sm.valid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control-sm:focus.valid+label:after,.contact-form textarea.contact-textarea.form-control-sm.valid+label:after,.contact-form textarea.contact-textarea.form-control-sm:focus.valid+label:after {
-    top: 3.7rem
-}
-
-.contact-form input:not([type]).form-control-sm.invalid+label:after,.contact-form input:not([type]).form-control-sm:focus.invalid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control-sm.invalid+label:after,.contact-form input[type="text"]:not(.browser-default).form-control-sm:focus.invalid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control-sm.invalid+label:after,.contact-form input[type="email"]:not(.browser-default).form-control-sm:focus.invalid+label:after,.contact-form textarea.contact-textarea.form-control-sm.invalid+label:after,.contact-form textarea.contact-textarea.form-control-sm:focus.invalid+label:after {
-    top: 3.6rem
-}
-
-.contact-form>input[type="date"]:not(.browser-default)+label {
-    -webkit-transform: translateY(-27px) scale(0.8);
-    transform: translateY(-27px) scale(0.8);
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0
-}
-
-.contact-form>input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,.contact-form>input[type="time"]:not(.browser-default)+label {
-    font-size: .8rem;
-    -webkit-transform: translateY(-25px);
-    transform: translateY(-25px);
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
 }
 
 .contact-form .form-control {
@@ -549,21 +515,8 @@ hr {
     box-shadow: none
 }
 
-.contact-form .form-control:disabled,.contact-form .form-control[readonly] {
-    background-color: transparent;
-    border-bottom: 1px solid #bdbdbd
-}
-
-.contact-form label {
-    font-size: 1rem
-}
-
-.contact-form label.active {
-    font-size: 1rem;
-}
-
 .contact-form .prefix {
-    top: .25rem;
+    top: .4rem;
     font-size: 1.75rem
 }
 
@@ -580,28 +533,6 @@ hr {
     margin-left: 2.6rem
 }
 
-.contact-form label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 1rem;
-    color: #757575;
-    cursor: text;
-    -webkit-transition: color .2s ease-out,-webkit-transform .2s ease-out;
-    transition: color .2s ease-out,-webkit-transform .2s ease-out;
-    transition: transform .2s ease-out,color .2s ease-out;
-    transition: transform .2s ease-out,color .2s ease-out,-webkit-transform .2s ease-out;
-    -webkit-transform: translateY(12px);
-    transform: translateY(12px);
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%
-}
-
-.contact-form label.active {
-    -webkit-transform: translateY(-14px) scale(0.8);
-    transform: translateY(-14px) scale(0.8);
-}
-
 .contact-form .prefix {
     position: absolute;
     -webkit-transition: color .2s;
@@ -612,12 +543,7 @@ hr {
     color: #4285f4
 }
 
-.card .contact-form label {
-    font-weight: 300;
-}
-
 .contact-form textarea.contact-textarea {
-    padding: 1.5rem 0;
     overflow-y: hidden;
 }
 

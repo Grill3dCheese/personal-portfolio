@@ -1,5 +1,11 @@
 	var wrapperMenu = document.querySelector('.wrapper-menu');
 
+	window.setTimeout(function () {
+		$('.alert').slideUp(500, function () {
+			$(this).remove();
+		});
+	}, 3000);
+
 	wrapperMenu.addEventListener('click', function() {
 		wrapperMenu.classList.toggle('open');
 	});

@@ -7,11 +7,11 @@ router.post('/contact', (req, res) => {
 
   // Instantiate the SMTP server
   const smtpTrans = nodemailer.createTransport({
-    host: "keithmckenna.com",
+    host: process.env.MAILHOST,
 	port: 465,
 	secure: true,
     auth: {
-    	user: "hello@keithmckenna.com",
+    	user: process.env.MAILUN,
         pass: process.env.MAILEPW
     }
   });

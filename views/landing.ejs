@@ -75,73 +75,361 @@
 		</div>
 	</section>
 
-	<section id="projects" class="project-page text-center">
-		<div class="container-fluid">
-			<div class="row align-items-center">
-				<div class="col-md-10 col-xl-6 mx-auto">
-					<h2>
-						My Projects
-					</h2>
-					<p>
-						<span>Below you'll find a collection of recent projects I've worked on.</span>
-					</p>
-				</div>
+<section id="projects" class="project-page text-center">
+	<div class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-md-10 col-xl-6 mx-auto">
+				<h2>
+					My Projects
+				</h2>
+				<p>
+					<span>Below you'll find a collection of recent projects I've worked on.</span>
+				</p>
 			</div>
-			<div class="row pt-5">
-				<div class="col-lg-4 align-self-start">
-					<div class="card card-overlay slender">
-						<div class="view view-overlay overlay">
-							<img src="assets/img/yelpcampDemo.png" alt="YelpCamp Project Animated Image" class="card-img-top">
+		</div>
+		<div class="row pt-5">
+			<div
+				id="multiItem-carousel"
+				class="carousel slide multi-carousel w-100"
+				data-ride="carousel"
+			>
+				<div class="carousel-controls mb-2 text-center">
+					<a href="#multiItem-carousel" class="btn-floating gold accent" data-slide="prev"
+						><i class="fas fa-chevron-left"></i
+					></a>
+					<a href="#multiItem-carousel" class="btn-floating gold accent" data-slide="next"
+						><i class="fas fa-chevron-right"></i
+					></a>
+				</div>
+				<ol class="carousel-indicators">
+					<li data-target="#multiItem-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#multiItem-carousel" data-slide-to="1"></li>
+					<li data-target="#multiItem-carousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<div class="col-md-4">
+							<div class="card card-overlay slender">
+								<div class="view view-overlay overlay">
+									<img
+										src="assets/img/yelpcampDemo.png"
+										alt="YelpCamp Project Animated Image"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body card-body-overlay text-center">
+									<h4 class="card-title">
+										<strong>YelpCamp</strong>
+									</h4>
+									<h5 class="pb-2">
+										<strong>Developed Using:</strong> <br />
+										HTML5, CSS3, Bootstrap 4, NodeJS/JS, MongoDB & templated
+										using Express
+									</h5>
+									<a
+										href="https://github.com/Grill3dCheese/yelp-camp"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Source Code</a
+									>
+									<a
+										href="https://nameless-eyrie-68240.herokuapp.com/"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Live Demo</a
+									>
+								</div>
+							</div>
 						</div>
-						<div class="card-body card-body-overlay text-center">
-							<h4 class="card-title">
-								<strong>YelpCamp</strong>
-							</h4>
-							<h5 class="pb-2">
-								<strong>Developed Using:</strong> <br> HTML5, CSS3, Bootstrap 4, NodeJS/JS, MongoDB & templated using Express
-							</h5>
-							<a href="https://github.com/Grill3dCheese/yelp-camp" class="btn project-btn" target="_blank" role="button">Source Code</a>
-							<a href="https://nameless-eyrie-68240.herokuapp.com/" class="btn project-btn" target="_blank" role="button">Live Demo</a>
+						<div class="col-md-4 mt-4 mt-md-0">
+							<div class="card card-overlay slender">
+								<div class="view view-overlay overlay">
+									<img
+										src="assets/img/gameDemo.png"
+										alt="YelpCamp Project Animated Image"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body card-body-overlay text-center">
+									<h4 class="card-title">
+										<strong>RGB Color Game</strong>
+									</h4>
+									<h5 class="pb-2">
+										<strong>Developed Using:</strong> <br />
+										HTML5, CSS3 & Vanilla Javascript
+									</h5>
+									<a
+										href="https://github.com/Grill3dCheese/color-game"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Source Code</a
+									>
+									<a
+										href="https://keithmckenna.com/colorgame/"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Live Demo</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mt-4 mt-md-0">
+							<div class="card card-overlay slender">
+								<div class="view view-overlay overlay">
+									<img
+										src="assets/img/blogDemo.png"
+										alt="YelpCamp Project Animated Image"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body card-body-overlay text-center">
+									<h4 class="card-title">
+										<strong>Blog Web App</strong>
+									</h4>
+									<h5 class="pb-2">
+										<strong>Developed Using:</strong> <br />
+										HTML5, CSS3, Bootstrap 4, NodeJS/JS, MongoDB & templated
+										using Express
+									</h5>
+									<a
+										href="https://github.com/Grill3dCheese/blog-app"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Source Code</a
+									>
+									<a
+										href="https://fathomless-harbor-37996.herokuapp.com/posts"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Live Demo</a
+									>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 align-self-end mt-4 mt-lg-0">
-					<div class="card card-overlay slender">
-						<div class="view view-overlay overlay">
-							<img src="assets/img/gameDemo.png" alt="YelpCamp Project Animated Image" class="card-img-top">
+					<div class="carousel-item">
+						<div class="col-md-4">
+							<div class="card card-overlay slender">
+								<div class="view view-overlay overlay">
+									<img
+										src="assets/img/yelpcampDemo.png"
+										alt="YelpCamp Project Animated Image"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body card-body-overlay text-center">
+									<h4 class="card-title">
+										<strong>YelpCamp</strong>
+									</h4>
+									<h5 class="pb-2">
+										<strong>Developed Using:</strong> <br />
+										HTML5, CSS3, Bootstrap 4, NodeJS/JS, MongoDB & templated
+										using Express
+									</h5>
+									<a
+										href="https://github.com/Grill3dCheese/yelp-camp"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Source Code</a
+									>
+									<a
+										href="https://nameless-eyrie-68240.herokuapp.com/"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Live Demo</a
+									>
+								</div>
+							</div>
 						</div>
-						<div class="card-body card-body-overlay text-center">
-							<h4 class="card-title">
-								<strong>RGB Color Game</strong>
-							</h4>
-							<h5 class="pb-2">
-								<strong>Developed Using:</strong> <br> HTML5, CSS3 & Vanilla Javascript
-							</h5>
-							<a href="https://github.com/Grill3dCheese/color-game" class="btn project-btn" target="_blank" role="button">Source Code</a>
-							<a href="https://keithmckenna.com/colorgame/" class="btn project-btn" target="_blank" role="button">Live Demo</a>
+						<div class="col-md-4 mt-4 mt-md-0">
+							<div class="card card-overlay slender">
+								<div class="view view-overlay overlay">
+									<img
+										src="assets/img/gameDemo.png"
+										alt="YelpCamp Project Animated Image"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body card-body-overlay text-center">
+									<h4 class="card-title">
+										<strong>RGB Color Game</strong>
+									</h4>
+									<h5 class="pb-2">
+										<strong>Developed Using:</strong> <br />
+										HTML5, CSS3 & Vanilla Javascript
+									</h5>
+									<a
+										href="https://github.com/Grill3dCheese/color-game"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Source Code</a
+									>
+									<a
+										href="https://keithmckenna.com/colorgame/"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Live Demo</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mt-4 mt-md-0">
+							<div class="card card-overlay slender">
+								<div class="view view-overlay overlay">
+									<img
+										src="assets/img/blogDemo.png"
+										alt="YelpCamp Project Animated Image"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body card-body-overlay text-center">
+									<h4 class="card-title">
+										<strong>Blog Web App</strong>
+									</h4>
+									<h5 class="pb-2">
+										<strong>Developed Using:</strong> <br />
+										HTML5, CSS3, Bootstrap 4, NodeJS/JS, MongoDB & templated
+										using Express
+									</h5>
+									<a
+										href="https://github.com/Grill3dCheese/blog-app"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Source Code</a
+									>
+									<a
+										href="https://fathomless-harbor-37996.herokuapp.com/posts"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Live Demo</a
+									>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 align-self-start mt-4 mt-lg-0">
-					<div class="card card-overlay slender">
-						<div class="view view-overlay overlay">
-							<img src="assets/img/blogDemo.png" alt="YelpCamp Project Animated Image" class="card-img-top">
+					<div class="carousel-item">
+						<div class="col-md-4">
+							<div class="card card-overlay slender">
+								<div class="view view-overlay overlay">
+									<img
+										src="assets/img/yelpcampDemo.png"
+										alt="YelpCamp Project Animated Image"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body card-body-overlay text-center">
+									<h4 class="card-title">
+										<strong>YelpCamp</strong>
+									</h4>
+									<h5 class="pb-2">
+										<strong>Developed Using:</strong> <br />
+										HTML5, CSS3, Bootstrap 4, NodeJS/JS, MongoDB & templated
+										using Express
+									</h5>
+									<a
+										href="https://github.com/Grill3dCheese/yelp-camp"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Source Code</a
+									>
+									<a
+										href="https://nameless-eyrie-68240.herokuapp.com/"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Live Demo</a
+									>
+								</div>
+							</div>
 						</div>
-						<div class="card-body card-body-overlay text-center">
-							<h4 class="card-title">
-								<strong>Blog Web App</strong>
-							</h4>
-							<h5 class="pb-2">
-								<strong>Developed Using:</strong> <br> HTML5, CSS3, Bootstrap 4, NodeJS/JS, MongoDB & templated using Express
-							</h5>
-							<a href="https://github.com/Grill3dCheese/blog-app" class="btn project-btn" target="_blank" role="button">Source Code</a>
-							<a href="https://fathomless-harbor-37996.herokuapp.com/posts" class="btn project-btn" target="_blank" role="button">Live Demo</a>
+						<div class="col-md-4 mt-4 mt-md-0">
+							<div class="card card-overlay slender">
+								<div class="view view-overlay overlay">
+									<img
+										src="assets/img/gameDemo.png"
+										alt="YelpCamp Project Animated Image"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body card-body-overlay text-center">
+									<h4 class="card-title">
+										<strong>RGB Color Game</strong>
+									</h4>
+									<h5 class="pb-2">
+										<strong>Developed Using:</strong> <br />
+										HTML5, CSS3 & Vanilla Javascript
+									</h5>
+									<a
+										href="https://github.com/Grill3dCheese/color-game"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Source Code</a
+									>
+									<a
+										href="https://keithmckenna.com/colorgame/"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Live Demo</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mt-4 mt-md-0">
+							<div class="card card-overlay slender">
+								<div class="view view-overlay overlay">
+									<img
+										src="assets/img/blogDemo.png"
+										alt="YelpCamp Project Animated Image"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body card-body-overlay text-center">
+									<h4 class="card-title">
+										<strong>Blog Web App</strong>
+									</h4>
+									<h5 class="pb-2">
+										<strong>Developed Using:</strong> <br />
+										HTML5, CSS3, Bootstrap 4, NodeJS/JS, MongoDB & templated
+										using Express
+									</h5>
+									<a
+										href="https://github.com/Grill3dCheese/blog-app"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Source Code</a
+									>
+									<a
+										href="https://fathomless-harbor-37996.herokuapp.com/posts"
+										class="btn project-btn"
+										target="_blank"
+										role="button"
+										>Live Demo</a
+									>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
 <section id="contact" class="contact-page">
 	<div class="container-fluid">

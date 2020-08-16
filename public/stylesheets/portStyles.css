@@ -306,7 +306,7 @@ hr {
 	color: #000
 }
 
-/* Project Section & Cards */
+/* Project Section, Cards & Carousel */
 
 .project-page {
 	background-color: #f0f0f0;
@@ -352,6 +352,34 @@ hr {
 	padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-radius: 0 !important;
+}
+
+.carousel-indicators li {
+	width: 1.25rem;
+	max-width: 1.25rem;
+	height: 1.25rem;
+	margin-bottom: -3.75rem;
+	background-color: #e1a87a;
+	border-radius: 50%;
+	
+}
+
+.carousel-indicators .active {
+	width: 1.5rem;
+	max-width: 1.5rem;
+	height: 1.5rem;
+	opacity: 1
+}
+
+.carousel-inner {
+	padding-top: .5rem;
+	padding-bottom: 1rem
+}
+
+@media (min-width: 320px) {
+	.multi-carousel [class*="col-"] {
+		float: left;
+	}
 }
 
 .cta {

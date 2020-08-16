@@ -376,12 +376,6 @@ hr {
 	padding-bottom: 1rem
 }
 
-@media (min-width: 320px) {
-	.multi-carousel [class*="col-"] {
-		float: left;
-	}
-}
-
 .cta {
   	padding: 100px 0;
   	background-attachment: scroll;

@@ -461,7 +461,7 @@ hr {
     margin-bottom: 1.5rem
 }
 
-.contact-form input:not([type]),.contact-form input[type="text"]:not(.browser-default),.contact-form input[type="email"]:not(.browser-default),.contact-form textarea.contact-textarea {
+.contact-form input:not([type]),.contact-form input[type="text"]:not(.browser-default),.contact-form input[type="email"]:not(.browser-default),.contact-form input[type="number"]:not(.browser-default),.contact-form textarea.contact-textarea {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     background-color: transparent;
@@ -477,13 +477,13 @@ hr {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out
 }
 
-.contact-form input:not([type]):focus:not([readonly]),.contact-form input[type="text"]:not(.browser-default):focus:not([readonly]),.contact-form input[type="email"]:not(.browser-default):focus:not([readonly]),.contact-form textarea.contact-textarea:focus:not([readonly]) {
+.contact-form input:not([type]):focus:not([readonly]),.contact-form input[type="text"]:not(.browser-default):focus:not([readonly]),.contact-form input[type="email"]:not(.browser-default):focus:not([readonly]),.contact-form input[type="number"]:not(.browser-default):focus:not([readonly]),.contact-form textarea.contact-textarea:focus:not([readonly]) {
     border-bottom: 1px solid #e1a87a;
     -webkit-box-shadow: 0 1px 0 0 #e1a87a;
     box-shadow: 0 1px 0 0 #e1a87a
 }
 
-.contact-form input:not([type]):focus:not([readonly])+label,.contact-form input[type="text"]:not(.browser-default):focus:not([readonly])+label,.contact-form input[type="email"]:not(.browser-default):focus:not([readonly])+label,.contact-form textarea.contact-textarea:focus:not([readonly])+label {
+.contact-form input:not([type]):focus:not([readonly])+label,.contact-form input[type="text"]:not(.browser-default):focus:not([readonly])+label,.contact-form input[type="email"]:not(.browser-default):focus:not([readonly])+label,.contact-form input[type="number"]:not(.browser-default):focus:not([readonly])+label,.contact-form textarea.contact-textarea:focus:not([readonly])+label {
     color: #e1a87a
 }
 

@@ -188,6 +188,11 @@
 									<textarea name="message" id="message" class="form-control contact-textarea" rows="3" required></textarea>
 									<label for="message" class="form-control-placeholder">Send Message</label>
 								</div>
+								<div class="contact-form">
+									<i class="fas fa-robot prefix grey-text"></i>
+									<input type="number" name="verification" id="verification" class="form-control" step="1" min="0" max="10" pattern="\d*" required>
+									<label class="form-control-placeholder" for="verification">Bot verification: what is four plus three?</label>
+								</div>
 								<div class="text-center">
 									<button class="btn contact-btn submit-btn dark">Submit</button>
 								</div>

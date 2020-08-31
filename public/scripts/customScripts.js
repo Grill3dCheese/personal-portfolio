@@ -1,4 +1,16 @@
 	var wrapperMenu = document.querySelector('.wrapper-menu');
+	const element = document.querySelector('form');
+
+	element.addEventListener('submit', event => {
+	var varNum = document.getElementById("verification").value;
+	  // actual logic, e.g. validate the form
+		if (varNum != 7) {
+			event.preventDefault();
+			alert("wrong");
+		} else {
+			return;
+		}
+	});
 	
 	window.setTimeout(function () {
 		$('.alert').slideUp(500, function () {

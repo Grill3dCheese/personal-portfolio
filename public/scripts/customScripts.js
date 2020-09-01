@@ -2,11 +2,14 @@
 	const element = document.querySelector('form');
 
 	element.addEventListener('submit', event => {
-	var varNum = document.getElementById("verification").value;
+	var varNum = document.getElementById("verification");
+	var checkLabel = document.getElementById("botCheck");
 	  // actual logic, e.g. validate the form
-		if (varNum != 7) {
+		if (varNum.value != 7) {
 			event.preventDefault();
-			alert("wrong");
+			varNum.style.borderColor = "red";
+			varNum.style.boxShadow = "0 1px 0 0 red"
+			checkLabel.style.color = "red";
 		} else {
 			return;
 		}

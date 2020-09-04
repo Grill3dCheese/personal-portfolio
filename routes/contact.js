@@ -3,8 +3,10 @@ var router = express.Router();
 var nodemailer = require("nodemailer");
 
 // POST route from contact form
-router.post('/contact', (req, res) => {
-
+router.post('/contact', (req, res, event) => {
+	if (req.body.verification != "7") {
+		event.preventDefault();
+	} else {
   // Instantiate the SMTP server
   const smtpTrans = nodemailer.createTransport({
     host: process.env.MAILHOST,
@@ -38,6 +40,7 @@ router.post('/contact', (req, res) => {
         res.redirect("back");
     }
   });
+	}
 });
 
 module.exports = router;
